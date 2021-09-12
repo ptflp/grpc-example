@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/ptflp/gomapper"
 )
 
@@ -23,6 +24,7 @@ func main() {
 
 	dest := Dest{}
 
+	// this example how to use struct to struct automapper
 	gomapper.MapStructs(&dest, &source)
 
 	fmt.Println(source, dest)
